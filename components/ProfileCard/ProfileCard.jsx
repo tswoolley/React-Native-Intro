@@ -5,9 +5,16 @@ export function ProfileCard() {
   return (
     <View style={cardStyle.container}>
       <View style={cardStyle.header}>
-        <Image style={cardStyle.avatar} source={{uri: "https://i.pravatar.cc/300"}}/>
-        <Text>Tomos</Text>
-        <Text>Hi i am learning</Text>
+        <View>
+          <Image
+            style={cardStyle.avatar}
+            source={{ uri: "https://i.pravatar.cc/300" }}
+          />
+        </View>
+        <View style={cardStyle.texts}>
+          <Text style={cardStyle.name}>Tomos</Text>
+          <Text>Hi i am learning React Native, lets see where this goes.</Text>
+        </View>
       </View>
 
       <View style={cardStyle.social}></View>
