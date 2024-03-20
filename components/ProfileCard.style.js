@@ -11,6 +11,13 @@ export const cardStyle = StyleSheet.create({
         },
         shadowOpacity: 0.5,
         shadowRadius: 3.85,
-    }
+    },
+    avatar: {
+        width: 70,
+        height: 70,
+        borderRadius: "50%",
+    },
+    header: {},
+    social: {},
 
 });
