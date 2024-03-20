@@ -8,7 +8,7 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView style={{ backgroundColor: "red", flex: 1 }}>
         <View style={{ backgroundColor: "blue", flex: 1 }} />
-        <View style={{ backgroundColor: "green", flex: 1 }} />
+        <View style={{ backgroundColor: "green", flex: 2 }} />
       </SafeAreaView>
     </SafeAreaProvider>
   );
