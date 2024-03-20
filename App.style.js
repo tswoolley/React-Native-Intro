@@ -4,7 +4,8 @@ export const appStyle = StyleSheet.create({
   box1: {
     height: 100,
     width: 100,
-    backgroundColor:"red"
+    backgroundColor:"red",
+    alignSelf : "flex-start"
   },
   box2: {
     height: 100,
