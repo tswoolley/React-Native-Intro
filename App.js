@@ -6,7 +6,7 @@ import { appStyle } from "./App.style";
 export default function App() {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1, justifyContent: "center" }}>
+      <SafeAreaView style={{ flex: 1, alignItems: "center" }}>
         <View style={appStyle.box1} />
         <View style={appStyle.box2} />
         <View style={appStyle.box3} />
