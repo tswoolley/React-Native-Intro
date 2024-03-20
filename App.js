@@ -1,15 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Profil } from "./components/Profile/Profil";
+import { ProfileCard } from "./components/ProfileCard/ProfileCard";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { appStyle } from "./App.style";
 
 export default function App() {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1, alignItems: "flex-end" }}>
-        <View style={appStyle.box1} />
-        <View style={appStyle.box2} />
-        <View style={appStyle.box3} />
+      <SafeAreaView style={{ flex: 1}}>
+        <ProfileCard/>
       </SafeAreaView>
     </SafeAreaProvider>
   );
