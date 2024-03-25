@@ -2,8 +2,13 @@ import { TouchableOpacity, Text, View, Image } from "react-native";
 import { cardStyle } from "../ProfileCard.style";
 import { FontAwesome } from "@expo/vector-icons";
 
-export function ProfileCard(props) {
-  console.log(props)
+export function ProfileCard({ firstName, lastName, age }) {
+  return (
+    <Text style={{ fontSize: 70 }}>
+      {age > 100 ? "You are old" : "You are young"}
+    </Text>
+  );
+
   return (
     <View style={cardStyle.container}>
       <View style={cardStyle.header}>
@@ -14,8 +19,12 @@ export function ProfileCard(props) {
           />
         </View>
         <View style={cardStyle.texts}>
-          <Text style={cardStyle.name}>{props.firstName} {props.lastName + "! "} </Text>
-          <Text>Hi i am learning React Native, I am {props.age}, lets see where this goes.</Text>
+          <Text style={cardStyle.name}>
+            {firstName} {lastName + "! "}{" "}
+          </Text>
+          <Text>
+            Hi i am learning React Native, I am {age}, lets see where this goes.
+          </Text>
         </View>
       </View>
 
