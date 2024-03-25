@@ -2,6 +2,7 @@ import { StyleSheet, Text } from "react-native";
 
 export const cardStyle = StyleSheet.create({
     container: {
+        borderRadius: 10,
         padding: 20,
         backgroundColor: "white",
         elevation: 2,
@@ -30,6 +31,16 @@ export const cardStyle = StyleSheet.create({
     header: {
         flexDirection: "row",
     },
-    social: {},
+    social: {
+        padding: 10,
+        justifyContent: "space-evenly",
+        flexDirection: "row",
+    },
+
+    socialBtn: {
+        borderRadius: "50%",
+        padding: 10,
+        backgroundColor: "#eee"
+    },
 
 });

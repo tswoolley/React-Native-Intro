@@ -6,7 +6,7 @@ import { appStyle } from "./App.style";
 export default function App() {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1, justifyContent: "center"}}>
+      <SafeAreaView style={{ flex: 1, justifyContent: "center", padding:20}}>
         <ProfileCard/>
       </SafeAreaView>
     </SafeAreaProvider>
