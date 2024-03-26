@@ -2,13 +2,7 @@ import { TouchableOpacity, Text, View, Image } from "react-native";
 import { cardStyle } from "../ProfileCard.style";
 import { FontAwesome } from "@expo/vector-icons";
 
-export function ProfileCard({ firstName, lastName, age }) {
-  return (
-    <Text style={{ fontSize: 70 }}>
-      {age > 100 ? "You are old" : "You are young"}
-    </Text>
-  );
-
+export function ProfileCard({ firstName, lastName, age, isOpenToWork }) {
   return (
     <View style={cardStyle.container}>
       <View style={cardStyle.header}>
@@ -24,6 +18,17 @@ export function ProfileCard({ firstName, lastName, age }) {
           </Text>
           <Text>
             Hi i am learning React Native, I am {age}, lets see where this goes.
+          </Text>
+
+          <Text
+            style={{
+              backgroundColor: isOpenToWork ? "green" : "red",
+              color: "white",
+            }}
+          >
+            {isOpenToWork
+              ? "I am open to work."
+              : "I am not looking for a job."}
           </Text>
         </View>
       </View>

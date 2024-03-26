@@ -42,5 +42,4 @@ export const cardStyle = StyleSheet.create({
         padding: 10,
         backgroundColor: "#eee"
     },
-
-});
+ });
