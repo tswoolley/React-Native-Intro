@@ -12,7 +12,7 @@ export default function App() {
           lastName={"The Dev"}
           age={18}
           isOpenToWork
-        ></ProfileCard>
+        />
       </SafeAreaView>
     </SafeAreaProvider>
   );
